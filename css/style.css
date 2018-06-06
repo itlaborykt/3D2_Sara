@@ -103,7 +103,5 @@ footer.page-footer {
 }
 
 .indicators {
-	right: 500px;
-	left: 500px;
-	white-space: nowrap;
+	display: none;
 }
