@@ -38,9 +38,9 @@
 	    });
 	    
     	$(this).parent().css("height", height);
-	    console.log(height);
+	    console.log(height, $(this));
     });
-	  }, 1000);
+	  }, 100);
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
