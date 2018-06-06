@@ -101,3 +101,9 @@ footer.page-footer {
 .carousel {
  height: 2000px!important; 
 }
+
+.indicators {
+	right: 500px;
+	left: 500px;
+	white-space: nowrap;
+}
