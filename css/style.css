@@ -96,4 +96,9 @@ footer.page-footer {
 .carousel-item {
   min-height: auto!important;
   height: auto!important;
+  position: static!important;
+}
+
+.carousel {
+ height: auto!important; 
 }
