@@ -38,6 +38,7 @@
 	    });
 	    
     	$(this).parent().css("height", height);
+	    console.log(height);
     });
 
   }); // end of document ready
