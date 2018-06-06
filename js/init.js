@@ -10,10 +10,12 @@
     	$(this).css("height", height);
     });
 
-    $('.carousel.carousel-slider').carousel({
+    $('.carousel.carousel-slider').each(function() {
+	    $(this).carousel({
 	    fullWidth: true,
 	    indicators: true,
 	  });
+    });
 
     $(".carousel-next").click(function() {
     	var carousel = $(this).parent();
