@@ -13,7 +13,6 @@
     $('.carousel.carousel-slider').each(function() {
 	    $(this).carousel({
 	    fullWidth: true,
-	    indicators: true,
 	  });
     });
 
