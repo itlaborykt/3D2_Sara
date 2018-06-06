@@ -29,7 +29,7 @@
     	carousel.carousel("prev");
     });
 
-	  
+	  setTimeout(function() {
     $(".carousel").each(function() {
 	var height = 0;
 	    
@@ -40,6 +40,7 @@
     	$(this).parent().css("height", height);
 	    console.log(height);
     });
+	  }, 1000);
 
   }); // end of document ready
 })(jQuery); // end of jQuery name space
