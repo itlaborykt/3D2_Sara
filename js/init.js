@@ -1,4 +1,4 @@
-
+(function($){
   $(function(){
 
     //$('.sidenav').sidenav();
@@ -10,12 +10,10 @@
     	$(this).css("height", height);
     });
 
-    $('.carousel.carousel-slider').each(function() {
-	    $(this).carousel({
+    $('.carousel.carousel-slider').carousel({
 	    fullWidth: true,
-		    indicators: true,
+	    indicators: true,
 	  });
-    });
 
     $(".carousel-next").click(function() {
     	var carousel = $(this).parent();
@@ -29,21 +27,13 @@
     	carousel.carousel("prev");
     });
 
-	  setTimeout(function() {
-    $(".carousel").each(function() {
-	var height = 0;
-	    
-	    $(this).find(".carousel-item").each(function() {
-		 if( $(this).outerHeight() > height ) height =  $(this).outerHeight();
-	    });
-	    
+    $(".carousel-item").each(function() {
+    	var height = $(this).outerHeight();
     	$(this).parent().css("height", height);
-	    console.log(height, $(this));
     });
-	  }, 100);
 
   }); // end of document ready
-
+})(jQuery); // end of jQuery name space
 
 
 
