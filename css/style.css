@@ -97,3 +97,7 @@ footer.page-footer {
   min-height: auto!important;
   height: auto!important;
 }
+
+.carousel {
+ height: 2000px!important; 
+}
