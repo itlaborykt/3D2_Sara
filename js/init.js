@@ -1,4 +1,4 @@
-(function($){
+
   $(function(){
 
     //$('.sidenav').sidenav();
@@ -43,7 +43,7 @@
 	  }, 100);
 
   }); // end of document ready
-})(jQuery); // end of jQuery name space
+
 
 
 
