@@ -30,8 +30,13 @@
     });
 
 	  
-    $(".carousel-item").each(function() {
-    	var height = $(this).outerHeight();
+    $(".carousel").each(function() {
+	var height = 0;
+	    
+	    $(this).find(".carousel-item").each(function() {
+		 if( $(this).outerHeight() > height ) height =  $(this).outerHeight();
+	    });
+	    
     	$(this).parent().css("height", height);
     });
 
