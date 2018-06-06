@@ -27,11 +27,12 @@
     	carousel.carousel("prev");
     });
 
+	  /*
     $(".carousel-item").each(function() {
     	var height = $(this).outerHeight();
     	$(this).parent().css("height", height);
     });
-
+*/
   }); // end of document ready
 })(jQuery); // end of jQuery name space
 
